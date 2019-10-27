@@ -1,1 +1,152 @@
+clc
+%1point
+format short
+m = -14/5; n = tan(pi/8);
+answer_1a = 3*m*m+(2^(1/3)*(n^(2/3)))/m
+m = 2.2*10^(-2); n = 1/(3.1);
+answer_1b = 3*m*m+(2^(1/3)*(n^(2/3)))/m
 
+%2point
+format shortE
+l = 1.7*(10^3); a = (18*pi)/180;
+answer_2a = (4/3)*(l^3)*sin(a/2)^2*(sqrt(cos(a)))
+l = 16/21; a = pi/5;
+answer_2b = (4/3)*(l^3)*sin(a/2)^2*(sqrt(cos(a)))
+
+%3point
+format shortG
+a = 1.5; b = 0.8; alpha = 61*pi/180;
+answer_3a = sqrt((a*sqrt(b))/(tan(alpha)^(1/3)))
+a = 3*10^-2; b = 0.71; alpha = 3/7*pi;
+answer_3b = sqrt((a*sqrt(b))/(tan(alpha)^(1/3)))
+
+%4point
+format long
+a = 4.13*10^-1; b = 1/261;
+answer_4a = (3*a^2*sqrt(6.8*(a-b)))/(4*(a+b)^3)
+a = sin(5*pi/8); b = -tan(12*pi/180);
+answer_4b = (3*a^2*sqrt(6.8*(a-b)))/(4*(a+b)^3)
+
+%5point скорее всего ошибка в ответах, проверил через PhotoMat
+format longE
+c = log10(2.38); alpha = pi/5;
+answer_5a = (c^3/6)*cos(alpha/2)*sqrt(sin(alpha))
+c = exp(-0.3); alpha = 65*pi/180;
+answer_5b = (c^3/6)*cos(alpha/2)*sqrt(sin(alpha))
+
+%6point
+format shortE
+n = 3.1516*(10^(-2)); alpha = 5*pi/180;
+answer_6a = sqrt(n^3/(16.3*sin(alpha)*sin(2*alpha)))
+n = exp(3.5); alpha = 2*pi/13;
+answer_6b = sqrt(n^3/(16.3*sin(alpha)*sin(2*alpha)))
+
+%7point
+S = log(3); alpha = 44*pi/180;
+answer_7a = 5*sin(35*pi/180)*sqrt((S^3*cos(36*pi/180))/(pi^3*tan(alpha)))
+S = 18/25; alpha = 7*pi/12;
+answer_7b = 5*sin(35*pi/180)*sqrt((S^3*cos(36*pi/180))/(pi^3*tan(alpha)))
+
+%8point
+alpha = 3*pi/7; betta = 83*pi/180;
+answer_8a = abs(log10(1+sin(alpha)) + log(1-sin(betta)))
+alpha = 2*pi/3; betta = 16*pi/180;
+answer_8b = abs(log10(1+sin(alpha)) + log(1-sin(betta)))
+
+%9point
+alpha = 5*pi/7; betta = 0.3*pi;
+answer_9a = ((sin(alpha + betta))^2 - sin(alpha - betta)^2)^(1/3)
+alpha = 12*pi/180; betta = 220*pi/180;
+answer_9b = ((sin(alpha + betta))^2 - sin(alpha - betta)^2)^(1/3)
+
+%10point
+a = 3.56; b = exp(0.316);
+answer_10a = (log(b+1.4)/log(a))^(-3/4)
+a = 2; b = 2.1649*10^(-2);
+answer_10b = (log(b+1.4)/log(a))^(-3/4)
+
+%11point
+p = log(3); q = log10(3);
+answer_11a = 3*(p^(-2/3) + q^(-1/2))*p^(1/3)*q^(1/3)
+p = 0.013; q = 1.4*10^2;
+answer_11b = 3*(p^(-2/3) + q^(-1/2))*p^(1/3)*q^(1/3)
+
+%12point 11
+m = 3.6485*(10^2);
+answer_12a = 2/3*m^(27/12)
+
+%13point
+S = exp(1.11); alpha = 7*pi/11;
+answer_13a = 8/3*S*sqrt(S/pi)*(sin(alpha/2)^6)
+S = 5.403; alpha = 28*pi/180;
+answer_13b = 8/3*S*sqrt(S/pi)*(sin(alpha/2)^6)
+
+%14point
+F = 1/0.03; alpha = 5*pi/7;
+answer_14a = 2*sqrt(F/pi)*tan(alpha)*(sin(alpha/2)^2)
+F = log(7); alpha = 1.34*pi/180;
+answer_14b = 2*sqrt(F/pi)*tan(alpha)*(sin(alpha/2)^2)
+
+%15point
+m = -20.1; alpha = 20*pi/180;
+answer_15a = (1/12)*((m^3*cos(alpha)/(sin(alpha)+cos(alpha))^3))
+m = log10(13.6); alpha = 1.48;
+answer_15b = (1/12)*((m^3*cos(alpha)/(sin(alpha)+cos(alpha))^3))
+
+%16point
+h = 0.28; alpha = 41*pi/180;
+answer_16a = (sqrt(3*(h^3))/(cos(alpha)^2))*sin(alpha + 30*pi/180)*sin(alpha - 30*pi/180)
+h = exp(0.415); alpha = 237*pi/180;
+answer_16b = (sqrt(3*(h^3))/(cos(alpha)^2))*sin(alpha + 30*pi/180)*sin(alpha - 30*pi/180)
+
+%17point
+d = 6.178; alpha = 20*pi/180;
+answer_17a = alpha/3*(log10(d+2)-tan(alpha))^2
+d = -2.2461*10^(-2); alpha = 1.146;
+answer_17b = alpha/3*(log10(d+2)-tan(alpha))^2
+
+%18point
+d = 10.6; alpha = 50*pi/180;
+answer_18a = d^3*cot(alpha)*sqrt(sin(alpha)^4 - cos(alpha)^4)
+d = exp(2.3); alpha = 1;
+answer_18b = d^3*cot(alpha)*sqrt(sin(alpha)^4 - cos(alpha)^4)
+
+%19point
+a = 5.08; alpha = 25*pi/180;
+answer_19a = (a^2*sqrt(3))/4*(sec(alpha) + csc(alpha))^4
+a = log(1.37); alpha = 12*pi/25;
+answer_19b = (a^2*sqrt(3))/4*(sec(alpha) + csc(alpha))^4
+
+%20point
+A = 51*pi/180; B = 39*pi/180;
+answer_20a = sqrt(pi)/3*(1/(cot(A) + cot(B))^2)
+A = 0.643; B = pi/7;
+answer_20b = sqrt(pi)/3*(1/(cot(A) + cot(B))^2)
+
+%21point
+x = exp(1.648);
+answer_21a = log10(3^(x^2-x-9) + 8/27)
+x = tan(1.21);
+answer_21b = log10(3^(x^2-x-9) + 8/27)
+
+%22point
+a = 2.1754*10^2;
+answer_22a = (5^(1/5)*exp(4/5*a)*(a+12.36)^(2/5))/log(a+7)
+a = cos(17*pi/180);
+answer_22b = (5^(1/5)*exp(4/5*a)*(a+12.36)^(2/5))/log(a+7)
+
+%23point
+x = exp(2.145);
+answer_23a = (log10(x))^2 - (27/8)^(x-1)*sin(sqrt(x))
+x = 2.468*10^(-1);
+answer_23b = (log10(x))^2 - (27/8)^(x-1)*sin(sqrt(x))
+
+%24point11
+x = exp(-0.37); y = log(2.1517);
+answer_24a = (x-y)^(2/5)*(1/y-x)^(1/15)
+
+%25point
+A = 5.6; B = log10(25);
+answer_25a = (sin(A)+tan(B))/(A-3*B)^(2/5)
+A = 8*pi/9; B = pi/10;
+answer_25b = (sin(A)+tan(B))/(A-3*B)^(2/5)
